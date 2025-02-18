@@ -21,7 +21,7 @@ func main() {
 	defer database.DisconnectDB()
 	router := gin.Default()
 	router.Use(cors.New(cors.Config{
-		AllowOrigins:     []string{"http://localhost:5500", "http://127.0.0.1:5500"},
+		AllowOrigins:     []string{"https://celadon-crisp-48f3cc.netlify.app/"},
 		AllowMethods:     []string{"GET", "POST", "DELETE", "PUT"},
 		AllowHeaders:     []string{"Content-Type", "Authorization"},
 		AllowCredentials: true,
